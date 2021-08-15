@@ -1,0 +1,29 @@
+/* /styles/css/vtex.store-components.css */
+.imageElement--imageHome {
+    border-radius: 25px;
+}
+
+.searchBarIcon {
+    color:white;
+}
+
+.searchBarInnerContainer {
+    border-radius: 25px;
+    background-color: chartreuse;
+    border: none;
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group){
+    border: none;
+    border-bottom: solid white 1px;
+    border-radius: 0;
+}
+
+.searchBarInnerContainer :global(.vtex-styleguide-9-x-input){
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.searchBarInnerContainer :global(.vtex-input__suffix){
+    background-color: black;
+}

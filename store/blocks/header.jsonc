@@ -1,9 +1,18 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ],
+    "props":{
+      "blockClass":"main-header-desktop"
+    }
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,7 +23,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop"
+    ]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -28,14 +39,19 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      "flex-layout.col#spacer",
       "minicart.v2"
     ]
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
+    }
+  },
+  "search-bar": {
+    "props":{
+      "maxWidth": "800px",
+      "displayMode": "search-button"
     }
   },
   "flex-layout.col#logo-desktop": {
@@ -46,24 +62,32 @@
   },
   "logo": {
     "props": {
-      "title": "Logo",
+      "title": "UpMedal",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150px'"
     }
   },
+
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
+      "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "login",
+      "search-bar",
+      "flex-layout.col#spacer",
       "minicart.v2"
     ],
     "props": {
@@ -72,8 +96,5 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
   }
 }

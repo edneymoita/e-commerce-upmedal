@@ -1,15 +1,175 @@
 {
   "store.home": { 
     "blocks": [
+      "tab-layout",
       "rich-text"
     ]
   },
   "rich-text": { 
     "props": { 
-      "text": "VTEX Store Framework",
+      "text": "UpMedal Store",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
     }
+  },
+
+  "tab-layout": {
+    "children": [
+      "tab-list",
+      "slider-layout#home",
+      "tab-content"
+    ]
+  },
+
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2"
+    ]
+  },
+
+  "tab-content": {
+    "children":[
+      "tab-content.item#1",
+      "tab-content.item#2"
+    ]
+  },
+
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "promocao",
+      "label": "Promoção",
+      "defaultActiveTab": true,
+      "blockClass": "itemMenu"
+    }
+  },
+
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "divertidos",
+      "label": "Divertidos",
+      "blockClass": "itemMenu"
+    }
+  },
+
+  "tab-content.item#1": {
+    "children": [
+      "flex-layout.row#item1"
+    ],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+      "rich-text#2"
+    ],
+    "props": {
+      "tabId": "divertidos"
+    }
+  },
+
+  "rich-text#1": {
+    "props": {
+      "text": "Artigos em Promoções",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Artigos Divertidos",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+
+  "slider-layout#home": {
+    "children": ["image#1", "image#2"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "fullWidth": false
+    }
+  },
+
+  "image#1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210814%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210814T181253Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=169e660b9748b5647f370ffd91461819a1ae8fa6c2fa4f23da7dc14724ff2fb1",
+      "maxHeight": "250px",
+      "blockClass": "imageHome"
+    }
+  },
+
+  "image#2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210814%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210814T181336Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1ade5e9993d71233e5ba647a11829de7c969de9aa5c0224a44062b02017df753",
+      "maxHeight": "250px",
+      "blockClass": "imageHome"
+    }
+  },
+
+  "flex-layout.row#item1": {
+    "props":{
+      "horizontalAlign": "center",
+      "colSizing": "equal",
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#item1",
+      "flex-layout.col#item1"    
+    ]
+  },
+
+  "flex-layout.col#item1": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "colSizing": "equal"
+    },
+
+    "children": [
+      "flex-layout.row#title",
+      "flex-layout.row#image",
+      "flex-layout.row#sale",
+      "flex-layout.row#price"
+    ]
+  },
+
+  "flex-layout.row#title": {
+    "children": [
+      "product-name"
+    ]
+  },
+
+  "flex-layout.row#image": {
+    "children": [
+      "product-images"
+    ]
+  },
+
+  "flex-layout.row#sale": {
+    "children": [
+      "rich-text#1"
+    ]
+  },
+
+  "flex-layout.row#price": {
+    "children": [
+      "product-price",
+      "buy-button"
+    ]
   }
 }
