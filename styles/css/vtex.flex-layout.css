@@ -1,0 +1,9 @@
+.flexRowContent--header {
+    background-color: #212121;
+}
+
+.flexRowContent--items {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}

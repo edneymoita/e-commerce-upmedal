@@ -1,14 +1,14 @@
 .listContainer {
-    background-color: black;
+    background-color: #212121;
     justify-content: left;
 }
 
 .listItem--itemMenu {
-    background-color: black;
+    background-color: #212121;
 }
 
 .listItem--itemMenu :global(.vtex-button) {
-    background-color: black;
+    background-color:#212121;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     border: none;

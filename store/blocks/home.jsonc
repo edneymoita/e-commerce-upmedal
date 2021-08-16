@@ -5,12 +5,13 @@
       "rich-text"
     ]
   },
+
   "rich-text": { 
     "props": { 
       "text": "UpMedal Store",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "font": "heading-1"
     }
   },
 
@@ -18,6 +19,7 @@
     "children": [
       "tab-list",
       "slider-layout#home",
+      "flex-layout.row#combochoice",
       "tab-content"
     ]
   },
@@ -74,19 +76,22 @@
     "props": {
       "text": "Artigos em Promoções",
       "textPosition": "CENTER",
-      "font": "t-heading-3"
+      "font": "heading-3"
     }
   },
   "rich-text#2": {
     "props": {
       "text": "Artigos Divertidos",
       "textPosition": "CENTER",
-      "font": "t-heading-3"
+      "font": "heading-3"
     }
   },
 
   "slider-layout#home": {
-    "children": ["image#1", "image#2"],
+    "children": [
+      "image#1", 
+      "image#2"
+    ],
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -105,7 +110,7 @@
 
   "image#1": {
     "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210814%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210814T181253Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=169e660b9748b5647f370ffd91461819a1ae8fa6c2fa4f23da7dc14724ff2fb1",
+      "src": "assets/img/BANNER-WOOD.png",
       "maxHeight": "250px",
       "blockClass": "imageHome"
     }
@@ -113,18 +118,33 @@
 
   "image#2": {
     "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210814%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210814T181336Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1ade5e9993d71233e5ba647a11829de7c969de9aa5c0224a44062b02017df753",
+      "src": "assets/img/banner2.png",
       "maxHeight": "250px",
       "blockClass": "imageHome"
     }
   },
+
+  "flex-layout.row#combochoice": {
+    "props":{
+      "horizontalAlign": "center",
+      "colSizing": "equal",
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "blockClass": "items"
+    },
+    "children": [
+      "flex-layout.col#combochoice1",
+      "flex-layout.col#combochoice2"    
+    ]
+},
 
   "flex-layout.row#item1": {
     "props":{
       "horizontalAlign": "center",
       "colSizing": "equal",
       "preserveLayoutOnMobile": true,
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass": "items"
     },
     "children": [
       "flex-layout.col#item1",
@@ -141,10 +161,24 @@
     },
 
     "children": [
+      "list-context.product-list",
       "flex-layout.row#title",
       "flex-layout.row#image",
       "flex-layout.row#sale",
       "flex-layout.row#price"
+    ]
+  },
+
+  "list-context.product-list": {
+    "blocks": [
+      "product-summary.shelf#item1"
+    ]
+  },
+
+  "product-summary.shelf#item1": {
+    "children": [
+      "product-summary-name",
+      "product-selling-price"
     ]
   },
 
@@ -171,5 +205,51 @@
       "product-price",
       "buy-button"
     ]
+  },
+
+  "flex-layout.col#combochoice1": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "colSizing": "equal"
+    },
+
+    "children": [
+      "rich-text#combochoice1"
+    ]
+  },
+
+  "flex-layout.col#combochoice2": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "colSizing": "equal"
+    },
+
+    "children": [
+      "rich-text#combochoice2"
+    ]
+  },
+
+  "rich-text#combochoice1": {
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "você está vendo provas de",
+      "textColor": "c-text-emphasis",
+      "font": "heading-5"
+    }
+  },
+
+  "rich-text#combochoice2": {
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Corrida",
+      "textColor": "c-text-emphasis",
+      "font": "heading-5"
+    }
   }
 }

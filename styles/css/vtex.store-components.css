@@ -7,12 +7,6 @@
     color:white;
 }
 
-.searchBarInnerContainer {
-    border-radius: 25px;
-    background-color: chartreuse;
-    border: none;
-}
-
 .searchBarInnerContainer :global(.vtex-input-prefix__group){
     border: none;
     border-bottom: solid white 1px;
@@ -20,10 +14,10 @@
 }
 
 .searchBarInnerContainer :global(.vtex-styleguide-9-x-input){
-    background-color: black;
+    background-color: #212121;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .searchBarInnerContainer :global(.vtex-input__suffix){
-    background-color: black;
+    background-color: #212121;
 }
