@@ -81,56 +81,72 @@
 
   "image#footer1":{
       "props":{
-          "src": "assets/img/user.png",
-          "width": 40
+          "src": "assets/icons/user.svg",
+          "link": "/"
       }
   },
 
   "image#footer2":{
       "props":{
-          "src": "assets/img/prize.png",
-          "width": 30
+          "src": "assets/icons/trophy.svg",
+          "link": "/"
       }
   },
 
   "image#footer3":{
       "props":{
-          "src": "assets/img/cart.png",
-          "width": 35
+          "src": "assets/icons/cart.svg",
+          "link": "/shop"
       }
   },
 
   "image#footer4":{
       "props":{
-          "src": "assets/img/whatsapp.png",
-          "width": 35
+          "src": "assets/icons/whatsapp.svg",
+          "link": "/"
       }
   },
 
   "rich-text#footer1": {
     "props": {
-      "text": "Entrar",
+      "text": "ENTRAR",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-7",
       "blockClass": "icontext"
     }
   },
 
   "rich-text#footer2": {
     "props": {
-      "text": "Desafio",
+      "text": "DESAFIO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-7",
       "blockClass": "icontext"
     }
   },
   
   "rich-text#footer3": {
     "props": {
-      "text": "Loja",
+      "text": "LOJA",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-7",
       "blockClass": "icontext"
     }
   },
   
   "rich-text#footer4": {
     "props": {
-      "text": "Suporte",
+      "text": "SUPORTE",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-7",
       "blockClass": "icontext"
     }
   }

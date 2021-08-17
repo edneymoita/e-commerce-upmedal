@@ -55,7 +55,7 @@
     "props": {
       "title": "UpMedal",
       "href": "/",
-      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "url": "assets/img/upmedal.png",
       "width": "150px'"
     }
   },

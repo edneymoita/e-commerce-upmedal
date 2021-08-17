@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#copyright": {
+        "children": [
+          "rich-text#copyright",
+          "flex-layout.row#socials"
+        ]
+    },
+
+    "rich-text#copyright": {
+        "props": {
+            "text": "### Site fantasia. Desenvolvido no Treinamento ** VTEX - Hiring Coders ** ."
+        }
+    },
+
+    "flex-layout.row#socials": {
+        "children":[
+            "flex-layout.col#linkedin",
+            "flex-layout.col#github"
+        ]
+    },
+
+    "flex-layout.col#linkedin": {
+        "children":[
+            "image#linkedin"
+        ]
+    },
+
+    "image#linkedin":{
+        "props":{
+            "src": "assets/icons/linkedin.svg"
+        }
+    },
+  
+    "flex-layout.col#github": {
+        "children":[
+            "image#linkedin"
+        ]
+    },
+
+    "image#github":{
+        "props":{
+            "src": "assets/icons/github.svg"
+        }
+    }    
+}

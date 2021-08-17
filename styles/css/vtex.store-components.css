@@ -16,9 +16,16 @@
 
 .searchBarInnerContainer :global(.vtex-styleguide-9-x-input){
     background-color: #212121;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .searchBarInnerContainer :global(.vtex-input__suffix){
     background-color: #212121;
+}
+
+.installmentsPrice {
+    color:chartreuse
+}
+
+.sellingPrice {
+    color: white;
 }

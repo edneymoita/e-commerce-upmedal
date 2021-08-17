@@ -9,7 +9,6 @@
 
 .listItem--itemMenu :global(.vtex-button) {
     background-color:#212121;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     border: none;
     border-radius: 0;

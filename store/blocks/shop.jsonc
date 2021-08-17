@@ -1,0 +1,111 @@
+{
+    "store.custom#shop": {
+        "blocks":[
+            "tab-layout#shop"
+        ]
+    },
+
+    "tab-layout#shop": {
+        "children": [
+          "tab-list#shop",
+          "tab-content#shop"
+        ]
+    },
+    
+    "tab-list#shop": {
+        "children": [
+            "tab-list.item#shop1",
+            "tab-list.item#shop2"
+        ]
+    },
+    
+    "tab-content#shop": {
+        "children":[
+            "tab-content.item#shop1",
+            "tab-content.item#shop2"
+        ]
+    },
+    
+    "tab-list.item#shop1": {
+        "props": {
+            "tabId": "corinthians",
+            "label": "CORINTHIANS",
+            "defaultActiveTab": true,
+            "blockClass": "itemMenu"
+        }
+    },
+    
+    "tab-list.item#shop2": {
+        "props": {
+            "tabId": "signos",
+            "label": "SIGNOS",
+            "blockClass": "itemMenu"
+        }
+    },
+    
+    "tab-content.item#shop1": {
+        "children": [
+            "list-context.product-list#corinthians"
+        ],
+        "props": {
+            "tabId": "corinthians"
+        }
+    },
+
+    "tab-content.item#shop2": {
+        "children": [
+            "list-context.product-list#signus"
+        ],
+        "props": {
+            "tabId": "signos"
+        }
+    },
+    
+    "list-context.product-list#corinthians": {
+        "blocks": [
+          "product-summary.shelf#shop"
+        ],
+        "children": [
+          "slider-layout#shop"
+        ],
+        "props":{
+            "category": "20/22"
+        }
+    },
+    
+    "list-context.product-list#signus": {
+        "blocks": [
+          "product-summary.shelf#shop"
+        ],
+        "children": [
+          "slider-layout#shop"
+        ],
+        "props":{
+            "category": "20/21"
+        }
+    },
+
+    "slider-layout#shop": {
+        "props":{
+            "itemsPerPage": {
+                "desktop": 6,
+                "tablet": 4,
+                "phone": 3
+            },            
+            "fullWidth": true,
+            "centerMode": "center",
+            "showNavigationArrows": "always",
+            "blockClass": "sliderShop"
+        }
+    },
+    
+    "product-summary.shelf#shop": {
+        "children": [
+            "product-summary-image",
+            "product-summary-space",
+            "product-summary-name",
+            "product-summary-price"
+        ]
+    }
+
+}

@@ -1,41 +1,20 @@
 {
-    "list-context.product-list": {
-        "blocks": [
-            "product-summary.shelf#product"
-        ],
-        "children": [
-            "slider-layout"
-        ],
+    "productcard#item1":{
         "props":{
-            "maxItems": 1
+        "name": "Volta ao Mundo - Combo",
+        "src": "assets/img/corrida.png",
+        "price": "199,90",
+        "star": 4,
+        "launch": true
         }
     },
 
-    "product-summary.shelf#product": {
+    "productcard#item2":{
         "props":{
-            
-        },
-        "children": [
-            "product-summary-name",
-            "product-images",
-            "product-selling-price"
-        ]
-    },
-
-    "search-result-layout.customQuery": {
-        "props": {
-            "querySchema": {
-                "orderByField": "OrderByReleaseDateDESC",
-                "hideUnavailableItems": true,
-                "maxItemsPerPage": 1,
-                "queryField": "Camera",
-                "mapField": "ft",
-                "skusFilter": "ALL_AVAILABLE"
-            }
-        },
-        "blocks": [
-            "search-result-layout.desktop"
-        ]
+        "name": "Big Conquest 500K",
+        "src": "assets/img/corrida2.png",
+        "price": "79,90",
+        "star": 4
+        }
     }
-  
 }

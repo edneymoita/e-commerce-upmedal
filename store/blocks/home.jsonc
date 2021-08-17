@@ -1,18 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "tab-layout",
-      "rich-text"
+      "tab-layout"
     ]
-  },
-
-  "rich-text": { 
-    "props": { 
-      "text": "UpMedal Store",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "heading-1"
-    }
   },
 
   "tab-layout": {
@@ -76,14 +66,14 @@
     "props": {
       "text": "Artigos em Promoções",
       "textPosition": "CENTER",
-      "font": "heading-3"
+      "font": "t-heading-3"
     }
   },
   "rich-text#2": {
     "props": {
       "text": "Artigos Divertidos",
       "textPosition": "CENTER",
-      "font": "heading-3"
+      "font": "t-heading-3"
     }
   },
 
@@ -149,7 +139,7 @@
     },
     "children": [
       "flex-layout.col#item1",
-      "flex-layout.col#item1"    
+      "flex-layout.col#item2"    
     ]
   },
 
@@ -161,44 +151,21 @@
     },
 
     "children": [
-      "search-result-layout.customQuery"
+      // "search-result-layout.customQuery"
+      "productcard#item1"
     ]
   },
 
-  "list-context.product-list#obsoleto": {
-    "blocks": [
-      "product-summary.shelf#item1"
-    ]
-  },
+  "flex-layout.col#item2": {
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "colSizing": "equal"
+    },
 
-  "product-summary.shelf#item1": {
     "children": [
-      "product-summary-name",
-      "product-selling-price"
-    ]
-  },
-
-  "flex-layout.row#title": {
-    "children": [
-    ]
-  },
-
-  "flex-layout.row#image": {
-    "children": [
-      "product-images"
-    ]
-  },
-
-  "flex-layout.row#sale": {
-    "children": [
-      "rich-text#1"
-    ]
-  },
-
-  "flex-layout.row#price": {
-    "children": [
-      "product-price",
-      "buy-button"
+      // "search-result-layout.customQuery"
+      "productcard#item2"
     ]
   },
 
@@ -234,7 +201,7 @@
       "textPosition": "CENTER",
       "text": "você está vendo provas de",
       "textColor": "c-text-emphasis",
-      "font": "heading-5"
+      "font": "t-heading-5"
     }
   },
 
@@ -244,7 +211,7 @@
       "textPosition": "CENTER",
       "text": "Corrida",
       "textColor": "c-text-emphasis",
-      "font": "heading-5"
+      "font": "t-heading-5"
     }
   }
 }
