@@ -3,7 +3,16 @@
 }
 
 .flexRowContent--items {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0;
+    background-color: #424242;
+    border-radius: 5px;
+}
+
+.flexRowContent--footer {
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    background-color: #424242;
 }

@@ -1,7 +1,30 @@
+// store/blocks/search.jsonc
 {
   "store.search": {
     "blocks": [
-      
+      "search-result-layout"
+    ]
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#results"
+    ]
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
     ]
   }
 }

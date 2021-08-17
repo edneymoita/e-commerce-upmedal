@@ -17,14 +17,122 @@
     ]
   },
   "flex-layout.row#footer": { 
+    "props": {
+      "blockClass": "footer",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "paddingTop": 5,
+      "paddingBottom": 0,
+      "colSizing": "equal",
+      "colGap": 10
+    },
     "children": [
-      "image"
+      "flex-layout.col#1",
+      "flex-layout.col#2",
+      "flex-layout.col#3",
+      "flex-layout.col#4"
     ]
   },
-  "image": {
+
+  "flex-layout.col#1": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+      "children":[
+          "image#footer1",
+          "rich-text#footer1"
+      ]
+  },
+
+  "flex-layout.col#2": {
+    "props":{
+      "horizontalAlign": "center",
+      "verticalAlign":"center"
+    },
+    "children":[
+          "image#footer2",
+          "rich-text#footer2"
+      ]
+  },
+
+  "flex-layout.col#3": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+          "image#footer3",
+          "rich-text#footer3"
+      ]
+  },
+
+  "flex-layout.col#4": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+          "image#footer4",
+          "rich-text#footer4"
+      ]
+  },
+
+  "image#footer1":{
+      "props":{
+          "src": "assets/img/user.png",
+          "width": 40
+      }
+  },
+
+  "image#footer2":{
+      "props":{
+          "src": "assets/img/prize.png",
+          "width": 30
+      }
+  },
+
+  "image#footer3":{
+      "props":{
+          "src": "assets/img/cart.png",
+          "width": 35
+      }
+  },
+
+  "image#footer4":{
+      "props":{
+          "src": "assets/img/whatsapp.png",
+          "width": 35
+      }
+  },
+
+  "rich-text#footer1": {
     "props": {
-      "width": 100,
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png1"
+      "text": "Entrar",
+      "blockClass": "icontext"
+    }
+  },
+
+  "rich-text#footer2": {
+    "props": {
+      "text": "Desafio",
+      "blockClass": "icontext"
+    }
+  },
+  
+  "rich-text#footer3": {
+    "props": {
+      "text": "Loja",
+      "blockClass": "icontext"
+    }
+  },
+  
+  "rich-text#footer4": {
+    "props": {
+      "text": "Suporte",
+      "blockClass": "icontext"
     }
   }
+  
 }

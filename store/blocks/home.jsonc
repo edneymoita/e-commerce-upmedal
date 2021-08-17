@@ -104,7 +104,8 @@
         "timeout": 5000,
         "stopOnHover": false
       },
-      "fullWidth": false
+      "fullWidth": false,
+      "blockClass": "sliderhome"
     }
   },
 
@@ -155,21 +156,16 @@
   "flex-layout.col#item1": {
     "props": {
       "preventVerticalStretch": true,
-      "verticalAlign": "middle",
       "horizontalAlign": "center",
       "colSizing": "equal"
     },
 
     "children": [
-      "list-context.product-list",
-      "flex-layout.row#title",
-      "flex-layout.row#image",
-      "flex-layout.row#sale",
-      "flex-layout.row#price"
+      "search-result-layout.customQuery"
     ]
   },
 
-  "list-context.product-list": {
+  "list-context.product-list#obsoleto": {
     "blocks": [
       "product-summary.shelf#item1"
     ]
@@ -184,7 +180,6 @@
 
   "flex-layout.row#title": {
     "children": [
-      "product-name"
     ]
   },
 
