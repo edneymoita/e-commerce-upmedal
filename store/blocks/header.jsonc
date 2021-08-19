@@ -19,8 +19,8 @@
 
   "flex-layout.row#desktop": {
     "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
+      // "horizontalAlign": "center",
+      // "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
@@ -71,7 +71,7 @@
 
   "flex-layout.row#mobile": {
     "children": [
-      "flex-layout.col#logo-desktop",
+      "flex-layout.col#logo-mobile",
       "flex-layout.col#spacer",
       "search-bar",
       "flex-layout.col#spacer",
@@ -79,9 +79,26 @@
     ],
     "props": {
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true,
       "blockClass": "header"
     }
+  },
+
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#mobile"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "UpMedal",
+      "href": "/",
+      "url": "assets/img/upmedal.png",
+      "width": "80px'"
+    }
   }
+
 }

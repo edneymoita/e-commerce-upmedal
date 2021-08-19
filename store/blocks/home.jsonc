@@ -1,7 +1,9 @@
 {
   "store.home": { 
     "blocks": [
-      "tab-layout"
+      "tab-layout",
+      "__fold__",
+      "flex-layout.row#copyright"
     ]
   },
 
@@ -9,6 +11,7 @@
     "children": [
       "tab-list",
       "slider-layout#home",
+      // "stack-layout#cta",
       "flex-layout.row#combochoice",
       "tab-content"
     ]

@@ -27,8 +27,7 @@
       "preventVerticalStretch": true,
       "paddingTop": 5,
       "paddingBottom": 0,
-      "colSizing": "equal",
-      "colGap": 10
+      "colSizing": "equal"
     },
     "children": [
       "flex-layout.col#1",
@@ -74,37 +73,38 @@
       "horizontalAlign": "center"
     },
     "children":[
-          "image#footer4",
+          "whatsappio",
           "rich-text#footer4"
       ]
   },
 
   "image#footer1":{
       "props":{
-          "src": "assets/icons/user.svg",
-          "link": "/"
+          "src": "assets/icons/user.png",
+          "link": "/login"
       }
   },
 
   "image#footer2":{
       "props":{
-          "src": "assets/icons/trophy.svg",
+          "src": "assets/icons/trophy.png",
           "link": "/"
       }
   },
 
   "image#footer3":{
       "props":{
-          "src": "assets/icons/cart.svg",
+          "src": "assets/icons/cart.png",
           "link": "/shop"
       }
   },
 
-  "image#footer4":{
-      "props":{
-          "src": "assets/icons/whatsapp.svg",
-          "link": "/"
-      }
+  "whatsappio":{
+    "props":{
+        "icon": "assets/icons/whatsapp.png",
+        "url": "https://api.whatsapp.com/send?phone=5561986693548&text=Ol%C3%A1!%20Bem%20vindo%20a%20UpMedal!%20Em%20que%20podemos%20lhe%20ajudar%3F",
+        "altText": "WhatsApp"
+    }
   },
 
   "rich-text#footer1": {

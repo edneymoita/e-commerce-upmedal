@@ -65,7 +65,16 @@
             "product-summary-name",
             "product-summary-image",
             "product-summary-space",
-            "product-summary-price"
+            "product-summary-price",
+            "link.product#grid"
         ]
+    },
+
+    "link.product#grid": {
+        "props": {
+          "href": "/{slug}/p",
+          "label": "Detalhes",
+          "displayMode": "button"
+        }
     }
 }

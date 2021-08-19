@@ -1,0 +1,44 @@
+{
+    "stack-layout#cta": {
+        "children":[
+          "image#cta",
+          "link#cta"
+        ]
+    },
+
+    "image#cta": {
+        "props": {
+          "blockClass": "prize",
+          "src": "assets/img/goal.png",
+          "width": "auto",
+          "height": 200
+        }
+      },
+    
+      "link#cta": {
+        "props": {
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+          "label": "Venha para goleada de prêmios!!!!",
+          "blockClass": "stackCta"
+        },
+        "children":[
+            "modal-trigger#quickview"
+        ]
+    },
+
+    "modal-trigger#quickview": {
+        "children": [
+            "modal-layout#quickview"
+        ]
+    },
+    
+    "modal-layout#quickview": {
+        "children": [
+            "rich-text#combochoice2"
+        ]
+    }
+}

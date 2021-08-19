@@ -1,45 +1,26 @@
 {
     "flex-layout.row#copyright": {
         "children": [
-          "rich-text#copyright",
-          "flex-layout.row#socials"
+            "flex-layout.col#copyright"
+        ],
+        "props":{
+            
+        }
+    },
+
+    "flex-layout.col#copyright": {
+        "children": [
+            "rich-text#copyright"
         ]
     },
 
     "rich-text#copyright": {
         "props": {
-            "text": "### Site fantasia. Desenvolvido no Treinamento ** VTEX - Hiring Coders ** ."
+            "text": "Site fantasia.\nDesenvolvido por Edney Moita.\nTreinamento **VTEX - Hiring Coders**.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-7"
         }
-    },
-
-    "flex-layout.row#socials": {
-        "children":[
-            "flex-layout.col#linkedin",
-            "flex-layout.col#github"
-        ]
-    },
-
-    "flex-layout.col#linkedin": {
-        "children":[
-            "image#linkedin"
-        ]
-    },
-
-    "image#linkedin":{
-        "props":{
-            "src": "assets/icons/linkedin.svg"
-        }
-    },
-  
-    "flex-layout.col#github": {
-        "children":[
-            "image#linkedin"
-        ]
-    },
-
-    "image#github":{
-        "props":{
-            "src": "assets/icons/github.svg"
-        }
-    }    
+    }
 }

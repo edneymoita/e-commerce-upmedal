@@ -11,7 +11,7 @@
     border: none;
     border-bottom: solid white 1px;
     border-radius: 0;
-    width: 500px;
+    width: 600px;
 }
 
 .searchBarInnerContainer :global(.vtex-styleguide-9-x-input){
@@ -23,7 +23,7 @@
 }
 
 .installmentsPrice {
-    color:chartreuse
+    color:#59ff00;
 }
 
 .sellingPrice {
@@ -34,4 +34,10 @@
     color: white;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .searchBarInnerContainer :global(.vtex-input-prefix__group){
+        width: fit-content;
+    }
 }

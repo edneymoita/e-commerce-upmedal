@@ -35,7 +35,6 @@
       "product-identifier.product",
       "product-price#product-details",
       "sku-selector",
-      "product-reviews",
       "flex-layout.row#buy-button"
     ]
   },
