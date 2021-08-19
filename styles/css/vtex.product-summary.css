@@ -1,5 +1,6 @@
 .productBrand {
     color: white;
+    text-transform: uppercase;
 }
 
 .productName {
@@ -12,6 +13,8 @@
 
 .containerNormal {
     max-width: 150px;
+    text-align: center;
+    justify-content: center;
 }
 
 .clearLink {

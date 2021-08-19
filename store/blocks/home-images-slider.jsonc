@@ -1,0 +1,40 @@
+{
+      // imagens em destaque na Home da loja
+  "slider-layout#home": {
+    "children": [
+      "image#1", 
+      "image#2"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "fullWidth": false,
+      "blockClass": "sliderhome"
+    }
+  },
+
+  "image#1": {
+    "props": {
+      "src": "assets/img/BANNER-WOOD.png",
+      "maxHeight": "250px",
+      "blockClass": "imageHome"
+    }
+  },
+
+  "image#2": {
+    "props": {
+      "src": "assets/img/banner2.png",
+      "maxHeight": "250px",
+      "blockClass": "imageHome"
+    }
+  }
+}

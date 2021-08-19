@@ -29,3 +29,9 @@
 .sellingPrice {
     color: white;
 }
+
+.productBrand {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}

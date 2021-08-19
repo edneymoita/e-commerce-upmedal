@@ -15,7 +15,12 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#results"
-    ]
+    ],
+    "props":{
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "verticalALign": "middle"
+    }
   },
   "flex-layout.row#results": {
     "children": [
@@ -27,4 +32,6 @@
       "search-content"
     ]
   }
+
+
 }

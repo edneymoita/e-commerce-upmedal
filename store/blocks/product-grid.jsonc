@@ -1,0 +1,71 @@
+{
+    "search-result-layout.customQuery#Corinthians": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "Corinthians",
+                "mapField": "ft",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+       "blocks": [
+         "search-result-layout.desktop",
+         "search-result-layout.mobile",
+         "search-not-found-layout"
+        ]
+    },
+
+    "search-result-layout.customQuery#Palmeiras": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "Palmeiras",
+                "mapField": "ft",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+       "blocks": [
+         "search-result-layout.desktop",
+         "search-result-layout.mobile",
+         "search-not-found-layout"
+        ]
+    },
+
+    "gallery": {
+        "props": {
+          "layouts": [
+                {
+                "name": "grid",
+                "component": "GridSummary",
+                "itemsPerRow": {
+                    "(min-width:1300px)": 2,
+                    "desktop": 2,
+                    "tablet": 2,
+                    "phone": 1
+                }
+                }
+            ],
+            "GridSummary": "product-summary.shelf#grid"
+        }
+    },
+
+    "search-content": {
+        "blocks":[
+            "gallery",
+            "not-found"
+        ]
+    },
+
+    "product-summary.shelf#grid": {
+        "children": [
+            "product-summary-name",
+            "product-summary-image",
+            "product-summary-space",
+            "product-summary-price"
+        ]
+    }
+}
