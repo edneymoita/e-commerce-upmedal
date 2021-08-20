@@ -3,7 +3,8 @@
     "blocks": [
       "tab-layout",
       "__fold__",
-      "flex-layout.row#copyright"
+      "flex-layout.row#copyright",
+      "rich-text#blank"
     ]
   },
 
@@ -126,6 +127,13 @@
       "text": "Corrida",
       "textColor": "c-emphasis",
       "font": "t-heading-5"
+    }
+  },
+
+  "rich-text#blank": {
+    "props":{
+      "text": ".",
+      "textColor": "c-base"
     }
   }
 }

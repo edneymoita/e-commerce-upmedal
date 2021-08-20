@@ -21,12 +21,10 @@
       "blockClass": "footer",
       "fullWidth": true,
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "verticalAlign": "top",
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "paddingTop": 5,
-      "paddingBottom": 0,
+      "preventVerticalStretch": false,
       "colSizing": "equal"
     },
     "children": [
@@ -120,10 +118,10 @@
 
   "rich-text#footer2": {
     "props": {
-      "text": "DESAFIO",
+      "text": "DESAFIOS",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "textColor": "c-on-emphasis",
+      "textColor": "c-emphasis",
       "font": "t-heading-7",
       "blockClass": "icontext"
     }

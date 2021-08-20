@@ -36,7 +36,7 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .searchBarInnerContainer :global(.vtex-input-prefix__group){
         width: fit-content;
     }
