@@ -10,7 +10,7 @@
     "props": {
       "src": "assets/img/goal.png",
       "width": "auto",
-      "height": 200,
+      "height": 120,
       "blockClass": "prize"
     }
   },

@@ -16,7 +16,6 @@
     height: 13px;
 }
 
-.sliderTrackContainer--sliderShop {
-    justify-content: center;
-    padding-bottom: 30px;
+.paginationDotsContainer--sliderhome {
+    top: 260px;
 }

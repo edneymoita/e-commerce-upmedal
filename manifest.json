@@ -55,7 +55,8 @@
     "vtex.checkout-summary": "0.x",
     "vtex.whatsappio": "0.x",
     "vtex.io-documentation": "0.x",
-    "vtex.recordleads": "0.x"
+    "vtex.recordleads": "0.x",
+    "vtex.product-highlights": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

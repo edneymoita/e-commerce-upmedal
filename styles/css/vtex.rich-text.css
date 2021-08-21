@@ -8,3 +8,13 @@
     padding-left: 20px;
     justify-content: center;
 }
+
+.paragraph--highlight {
+    color: black;
+    font-weight: 500;
+    background-color: #59ff00;
+}
+
+.container--highlight {
+    justify-content: center;
+}

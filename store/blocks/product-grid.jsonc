@@ -66,6 +66,7 @@
             // "product-images#grid",
             "product-summary-image",
             "product-summary-space",
+            "condition-layout.product",
             "product-summary-price",
             "link.product#grid"
         ]
@@ -79,12 +80,43 @@
         }
     },
 
-    "product-images#grid": {
+    "condition-layout.product": {
+        "children":[
+            "condition.product#new"
+        ]
+    },
+
+    "condition.product#new": {
         "props": {
-            "showNavigationArrows": true,
-            "showPaginationDots": true,
-            "displayMode": "carousel",
-            "blockClass": "imagesGrid"
+            "conditions": [
+            {
+                "subject": "productId",
+                "verb": "is",
+                "object": "56"
+            }
+            ]
+        },
+        "children": [
+            "rich-text#highlight"
+        ]
+    },
+
+    "rich-text#highlight": {
+        "props": {
+            "text": "LANÇAMENTO",
+            "blockClass": "highlight",
+            "textAlignment": "center",
+            "textPosition": "center"
         }
     }
+     
+    // "product-images#grid": {
+    //     "props": {
+    //         "showNavigationArrows": true,
+    //         "showPaginationDots": true,
+    //         "displayMode": "carousel",
+    //         "thumbnailsOrientation": "horizontal",
+    //         "blockClass": "imagesGrid"
+    //     }
+    // }
 }
