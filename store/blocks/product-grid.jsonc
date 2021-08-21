@@ -63,6 +63,7 @@
     "product-summary.shelf#grid": {
         "children": [
             "product-summary-name",
+            // "product-images#grid",
             "product-summary-image",
             "product-summary-space",
             "product-summary-price",
@@ -75,6 +76,15 @@
           "href": "/{slug}/p",
           "label": "Detalhes",
           "displayMode": "button"
+        }
+    },
+
+    "product-images#grid": {
+        "props": {
+            "showNavigationArrows": true,
+            "showPaginationDots": true,
+            "displayMode": "carousel",
+            "blockClass": "imagesGrid"
         }
     }
 }

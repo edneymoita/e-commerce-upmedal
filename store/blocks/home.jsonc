@@ -13,7 +13,8 @@
       "tab-list",
       "slider-layout#home",
       // "stack-layout#cta",
-      "flex-layout.row#combochoice",
+      "flex-layout.row#modal",
+      // "flex-layout.row#combochoice",
       "tab-content"
     ]
   },
@@ -69,18 +70,44 @@
     }
   },
 
+  "flex-layout.row#modal": {
+    "props":{
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "modal"
+    },
+    "children": [
+      "flex-layout.col#modal"
+    ]
+  },
+
+  "flex-layout.col#modal": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+
+    "children": [
+      "modal-trigger#quickview"
+    ]
+  },
 
   "flex-layout.row#combochoice": {
     "props":{
       "horizontalAlign": "center",
-      "colSizing": "equal",
       "preserveLayoutOnMobile": true,
       "preventVerticalStretch": true,
+      "colGap": 3,
       "blockClass": "items"
     },
     "children": [
-      "flex-layout.col#combochoice1",
-      "flex-layout.col#combochoice2"    
+      "modal-trigger#quickview"
+      // "flex-layout.col#combochoice1",
+      // "flex-layout.col#combochoice2"    
     ]
   },
 
@@ -88,8 +115,7 @@
     "props": {
       "preventVerticalStretch": true,
       "verticalAlign": "middle",
-      "horizontalAlign": "center",
-      "colSizing": "equal"
+      "horizontalAlign": "right"
     },
 
     "children": [
@@ -101,8 +127,7 @@
     "props": {
       "preventVerticalStretch": true,
       "verticalAlign": "middle",
-      "horizontalAlign": "center",
-      "colSizing": "equal"
+      "horizontalAlign": "left"
     },
 
     "children": [
@@ -112,8 +137,8 @@
 
   "rich-text#combochoice1": {
     "props":{
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      "textAlignment": "right",
+      "textPosition": "right",
       "text": "você está vendo provas de",
       "textColor": "c-text-emphasis",
       "font": "t-heading-5"
@@ -122,8 +147,8 @@
 
   "rich-text#combochoice2": {
     "props":{
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      "textAlignment": "left",
+      "textPosition": "left",
       "text": "Corrida",
       "textColor": "c-emphasis",
       "font": "t-heading-5"

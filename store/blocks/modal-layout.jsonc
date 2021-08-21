@@ -1,0 +1,47 @@
+{
+  "modal-trigger#quickview": {
+      "children": [
+        "image#cta",
+        "modal-layout#quickview"
+      ]
+  },
+    
+  "image#cta": {
+    "props": {
+      "src": "assets/img/goal.png",
+      "width": "auto",
+      "height": 200,
+      "blockClass": "prize"
+    }
+  },
+  
+  "modal-layout#quickview": {
+        "children": [
+          "modal-header",
+          "modal-content"
+        ]
+  },
+
+  "modal-header": {
+    "children":[
+      "rich-text#modalTitle"
+    ]
+  },
+
+  "modal-content": {
+      "children":[
+        "recordleads"
+      ]
+  },
+
+  "rich-text#modalTitle": {
+    "props": {
+      "text": "Goleada de Prêmios",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "color": "c-emphasis",
+      "blockClass": "modalTitle"
+    }
+  }
+    
+}

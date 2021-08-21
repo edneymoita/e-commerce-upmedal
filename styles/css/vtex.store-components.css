@@ -41,3 +41,11 @@
         width: fit-content;
     }
 }
+
+.imageElement--prize:hover {
+    cursor: pointer;
+}
+
+.carouselGaleryThumbs--imagesGrid {
+    visibility: hidden;
+}
