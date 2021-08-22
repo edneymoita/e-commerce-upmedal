@@ -17,5 +17,17 @@
 }
 
 .paginationDotsContainer--sliderhome {
-    top: 260px;
+    top: 250px;
+}
+
+@media (max-width: 800px) {
+    .paginationDotsContainer--sliderhome {
+        top: 235px;
+    }
+}
+
+@media (max-width: 400px) {
+    .paginationDotsContainer--sliderhome {
+        top: 100px;
+    }
 }

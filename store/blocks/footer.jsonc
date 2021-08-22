@@ -79,7 +79,7 @@
   "image#footer1":{
       "props":{
           "src": "assets/icons/user.png",
-          "link": "/login"
+          "link": "/#"
       }
   },
 

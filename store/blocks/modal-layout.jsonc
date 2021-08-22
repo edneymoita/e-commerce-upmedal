@@ -1,5 +1,5 @@
 {
-  // Cria uma modal para captação de dados dos clientes
+  // Cria uma modal para captação de dados dos clientes.
   
   "flex-layout.row#modal": {
     "props":{

@@ -19,7 +19,7 @@
       "flex-layout.row#results"
     ],
     "props":{
-      "preventRouteChange": false,
+      "preventRouteChange": true,
       "defaultGalleryLayout": "grid",
       "verticalALign": "middle"
     }
@@ -30,7 +30,7 @@
       "flex-layout.row#results"
     ],
     "props":{
-      "preventRouteChange": false,
+      "preventRouteChange": true,
       "defaultGalleryLayout": "grid",
       "verticalALign": "middle"
     }
