@@ -1,4 +1,6 @@
 {
+    // Apresenta informações sobre o autor do projeto
+    
     "flex-layout.row#copyright": {
         "children": [
             "flex-layout.col#copyright"

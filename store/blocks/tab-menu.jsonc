@@ -1,0 +1,85 @@
+{
+    // cria os itens de menu com as buscas personalizadas
+
+    "tab-layout": {
+        "children": [
+          "tab-list",
+          "slider-layout#home",
+          "flex-layout.row#modal",
+          "tab-content"
+        ]
+      },
+    
+      "tab-list": {
+        "children": [
+          "tab-list.item#1",
+          "tab-list.item#2",
+          "tab-list.item#3"
+        ]
+      },
+    
+      "tab-content": {
+        "children":[
+          "tab-content.item#1",
+          "tab-content.item#2",
+          "tab-content.item#3"
+        ],
+        "props": {
+          "blockClass": "tabProducts"
+        }
+      },
+    
+      "tab-list.item#1": {
+        "props": {
+          "tabId": "corinthians",
+          "label": "Corinthians",
+          "defaultActiveTab": true,
+          "blockClass": "itemMenu"
+        }
+      },
+    
+      "tab-list.item#2": {
+        "props": {
+          "tabId": "palmeiras",
+          "label": "Palmeiras",
+          "blockClass": "itemMenu"
+        }
+      },
+
+      "tab-list.item#3": {
+        "props": {
+          "tabId": "all",
+          "label": "Todos",
+          "blockClass": "itemMenu"
+        }
+      },
+
+      "tab-content.item#1": {
+        "children": [
+          "search-result-layout.customQuery#Corinthians"
+        ],
+        "props": {
+          "tabId": "corinthians"
+        }
+      },
+
+      "tab-content.item#2": {
+        "children": [
+          "search-result-layout.customQuery#Palmeiras"
+        ],
+        "props": {
+          "tabId": "palmeiras"
+        }
+      },
+
+      "tab-content.item#3": {
+        "children": [
+          "search-result-layout.customQuery#all"
+        ],
+        "props": {
+          "tabId": "all"
+        }
+      }
+
+    
+}

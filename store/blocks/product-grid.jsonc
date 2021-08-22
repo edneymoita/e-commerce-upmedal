@@ -1,4 +1,6 @@
 {
+    // Faz a consulta customizada para cada item do menu
+
     "search-result-layout.customQuery#Corinthians": {
         "props": {
             "querySchema": {
@@ -24,6 +26,24 @@
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
                 "queryField": "Palmeiras",
+                "mapField": "ft",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+       "blocks": [
+         "search-result-layout.desktop",
+         "search-result-layout.mobile",
+         "search-not-found-layout"
+        ]
+    },
+
+    "search-result-layout.customQuery#all": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "upmedal",
                 "mapField": "ft",
                 "skusFilter": "ALL_AVAILABLE"
             }

@@ -1,5 +1,6 @@
 {
-      // imagens em destaque na Home da loja
+    // imagens em destaque na Home da loja
+    
   "slider-layout#home": {
     "children": [
       "image#1", 
