@@ -28,7 +28,7 @@ Foi solicitado que fosse feita uma loja digital baseada no loja atual da empresa
 - [vtex.whatsappio@0.0.0](https://github.com/edneymoita/whatsapp-io) - Componente React responsável pela integração com a API do WhatsApp paa suporte de loja.
 - [vtex.recordleads@0.0.0](https://github.com/edneymoita/recordleads) - Componente React responsável por apresentar uma tela de captação de dados dos clientes e armazená-los na nuvem da AWS, usando o GraphQL, Lambda e DynamoDB.
 
-(para linkar corretamente a loja no VTEX IO em um workspace qualquer, é preciso antes linkar os componentes acima, disponíveis nos repositórios informados.)
+(para linkar corretamente a loja no VTEX IO em um workspace qualquer é preciso antes linkar os componentes acima, disponíveis nos repositórios informados.)
 
 ***
 
